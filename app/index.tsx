@@ -1,3 +1,4 @@
+import { Link } from "expo-router";
 import { Text, View } from "react-native";
 
 export default function Index() {
@@ -10,6 +11,8 @@ export default function Index() {
       }}
     >
       <Text>OTP ILLAOI TOP</Text>
+      <Link href="/signIn">SignIn</Link>
+      <Link href="/signUp">SignUp</Link>
     </View>
   );
 }
