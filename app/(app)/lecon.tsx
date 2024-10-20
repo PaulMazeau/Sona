@@ -1,10 +1,12 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import LeconCard from '../../components/LeconCard';
 
 const Lecon = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Leçon</Text>
+      <LeconCard />
     </View>
   );
 };
