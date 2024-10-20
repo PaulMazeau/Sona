@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { useAuth } from '../../context/AuthContext';
+import QuizzCard from '../../components/quizz/QuizzCard';
 
 const Index = () => {
   const { user } = useAuth() || { user: null };
@@ -15,7 +16,7 @@ const Index = () => {
 
   return (
     <View style={styles.container}>
-        <Text style={styles.text}>OTP POPPY</Text>
+        <QuizzCard/>
       </View>
   );
 };

@@ -4,12 +4,14 @@ import HomeIcon from '../../assets/icons/HomeIcon';
 import LessonIcon from '../../assets/icons/LeconIcon';
 import UploadIcon from '../../assets/icons/UploadIcon';
 import ProfileIcon from '../../assets/icons/UserIcon';
+import { Colors } from '@/constants/Colors';
 
 const AppLayout = () => {
   return (
     <Tabs
       screenOptions={{
         headerShown: false,
+        tabBarActiveTintColor: Colors.primary,
       }}
     >
       <Tabs.Screen
@@ -17,7 +19,7 @@ const AppLayout = () => {
         options={{
           tabBarLabel: 'Accueil',
           tabBarIcon: ({ focused }) => (
-            <HomeIcon width={24} height={24} stroke={focused ? 'blue' : 'gray'} />
+            <HomeIcon width={24} height={24} stroke={focused ? Colors.primary : Colors.icon} />
           ),
         }}
       />
@@ -26,7 +28,7 @@ const AppLayout = () => {
         options={{
           tabBarLabel: 'Leçon',
           tabBarIcon: ({ focused }) => (
-            <LessonIcon width={24} height={24} stroke={focused ? 'blue' : 'gray'} />
+            <LessonIcon width={24} height={24} stroke={focused ? Colors.primary : Colors.icon} />
           ),
         }}
       />
@@ -35,7 +37,7 @@ const AppLayout = () => {
         options={{
           tabBarLabel: 'Upload',
           tabBarIcon: ({ focused }) => (
-            <UploadIcon width={24} height={24} stroke={focused ? 'blue' : 'gray'} />
+            <UploadIcon width={24} height={24} stroke={focused ? Colors.primary : Colors.icon} />
           ),
         }}
       />
@@ -44,7 +46,7 @@ const AppLayout = () => {
         options={{
           tabBarLabel: 'Profil',
           tabBarIcon: ({ focused }) => (
-            <ProfileIcon width={24} height={24} stroke={focused ? 'blue' : 'gray'} />
+            <ProfileIcon width={24} height={24} stroke={focused ? Colors.primary : Colors.icon} />
           ),
         }}
       />
